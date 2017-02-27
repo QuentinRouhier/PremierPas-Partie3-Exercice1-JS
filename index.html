@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 1</title>
+  </head>
+  <body>
+      <img src="images/image1.jpg" id="image1"/>
+      <script>
+      // declarration de la variable img qui va chercher l'id image1
+      var img = document.getElementById('image1');
+      /*quand on va sur la variable img il y a un ajour d'element mouseouver
+      qui veut due quand on passe la souris sur l'image la fonction va s'enclencher*/
+      img.addEventListener('mouseover', function images1(){
+      // dans la variable img il change le style  pour afficher une bordur */
+      img.style.border = '3px solid red'
+      })
+      // quand la souris sort de l'image la fonction s'enclanche
+      img.addEventListener('mouseout', function images2(){
+        // et enleve la bordure
+        img.style.border ='none';
+      })
+      </script>
+  </body>
+</html>
